@@ -1,0 +1,5 @@
+If you have a long enough and generated (pseodurandom) password then no consumer available hardware will be able to crack it within years even if they have the hash.
+
+In my personal real-world experience the average user will give-up the password/passphrase with an Evil Twin attack, which also captures the handshake and compares it to the credentials entered by the user. I have successfully done this numerous times with both Fluxion and Linset (I believe Linset may have been written in Spanish).
+
+Both (Linset and Fluxion) setup a fake AP that, to the client, looks just like the real AP. Then they flood the real AP with deauth packets, which disconnect the users/clients. When a user/client attempts to reconnect, a couple of things happen. He is directed to the fake AP, and is asked to enter his wireless password/passphrase. This password is immediately captured, and is compared to the handshake, which was also captured. Then the user is handed off to the real AP and resumes his session like nothing ever happened. The password/passphrase is presented to you in plain text.
