@@ -8,3 +8,5 @@ https://e-server.com.ua/sovety/bezopasnost-wifi-istoriia-nebezopasnosti-wep-wpa-
 crack
 https://www.krackattacks.com/
 https://medium.com/@umeshae/wireless-penetration-testing-part-01-971956bc8f8e
+
+https://brezular.com/2021/07/01/cracking-wpa-wpa2-pre-shared-key-using-gpu/
