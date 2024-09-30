@@ -3,3 +3,21 @@ If you have a long enough and generated (pseodurandom) password then no consumer
 In my personal real-world experience the average user will give-up the password/passphrase with an Evil Twin attack, which also captures the handshake and compares it to the credentials entered by the user. I have successfully done this numerous times with both Fluxion and Linset (I believe Linset may have been written in Spanish).
 
 Both (Linset and Fluxion) setup a fake AP that, to the client, looks just like the real AP. Then they flood the real AP with deauth packets, which disconnect the users/clients. When a user/client attempts to reconnect, a couple of things happen. He is directed to the fake AP, and is asked to enter his wireless password/passphrase. This password is immediately captured, and is compared to the handshake, which was also captured. Then the user is handed off to the real AP and resumes his session like nothing ever happened. The password/passphrase is presented to you in plain text.
+
+Definitely not impossible. More difficult than WEP for sure. Some passwords will be virtually impossible to crack. E.g. Many default WAP passwords issued by the ISP where I am from contain character sets of numbers and lowercase letters are 10 digits long and completely random. So unless you are very lucky and have the password in your wordlist/hashtable these will be very difficult. However, simple and common passwords are quite easy to crack using modern tools. Kali has some great applications for these operations. I was able to crack my own WAP using the aircrack-ng suite (deauth and monitor), hashcat and a custom wordlist (can be made using crunch).
+
+
+WPA has been broken for a very long time. WPA2 was broken in 2017. WPA3 was released in early 2019 and was broken soon after using a list of vulnerabilities which were exploited using what is called dragonblood.
+
+
+Edit: I should note that most of the dragonblood exploit has been patched. And its very unlikely that any random person will fall victim to these attacks as most of them require intercepting a handshake which is a pretty tedious thing to do.
+
+You can capture the handshake and brute force it, or apply a rainbow table formed from common billion+ password leaks.
+
+There are extremely high odds you'll succeed with such password lists.
+
+Deauth, capture the handshake and crack with hashcat + https://github.com/berzerk0/Probable-Wordlists
+
+There's also this https://www.krackattacks.com/
+
+And this https://www.fragattacks.com/
