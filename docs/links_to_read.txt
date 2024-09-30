@@ -1,0 +1,9 @@
+4-way handshake
+https://www.wifi-professionals.com/2019/01/4-way-handshake
+https://networklessons.com/cisco/ccnp-encor-350-401/wpa-and-wpa2-4-way-handshake
+
+in russian about unsecurity of wpa/wpa2
+https://e-server.com.ua/sovety/bezopasnost-wifi-istoriia-nebezopasnosti-wep-wpa-i-wpa2?srsltid=AfmBOor3kb8txKXh0sfsoEQIbrVMAVHd4gwtuJ8wjul8k2NilLGJK0Ip
+
+crack
+https://www.krackattacks.com/
